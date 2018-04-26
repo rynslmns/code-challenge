@@ -1,14 +1,14 @@
 
 # SteelHouse Code Challenge
 
-Please do not spend more than an hour on this challenge and focus on clear readable code. Good Luck!!
+Please do not spend more than an hour on this challenge and focus on clear readable code. Complete as many of these as you want. Good Luck!!
 
 ### Strip Url Params
 
 
 Complete the method so that it does the following:
--- Removes any duplicate query string parameters from the url
--- Removes any query string parameters specified within the 2nd argument (optional array)
+- Removes any duplicate query string parameters from the url
+- Removes any query string parameters specified within the 2nd argument (optional array)
 ###### Examples:
 #
 ```javascript
@@ -17,13 +17,24 @@ stripUrlParams('www.steelhouse.com?a=1&b=2&a=2', ['b']) // returns 'www.steelhou
 stripUrlParams('www.steelhouse.com', ['b']) // returns 'www.steelhouse.com'
 ```
 
+### Equal Arrays
+You are going to be given an array of integers. Your job is to take that array and find an index N where the sum of the integers to the left of N is equal to the sum of the integers to the right of N. If there is no index that would make this happen, return -1.
+
+###### Examples:
+#
+```javascript
+equalArray([1,2,3,4,3,2,1]) // returns 3
+equalArray([1,100,50,-51,1,1]) // returns 1
+equalArray([15,2,-1]) // returns -1 
+```
+
 ### Word Break
 In some languages, (i.e. Chinese and Japanese) there are no word breaks between words. This makes building search engines for these languages more complex, as it's difficult to break search terms into individual words.
 
 Your task is:
--- given a list of known words and a sentence with no spaces, break it into a list of known words. 
--- When you can't find a word list to make the sentence, you should return undefined.
--- If there are duplicates, just return one of them.
+- given a list of known words and a sentence with no spaces, break it into a list of known words. 
+- When you can't find a word list to make the sentence, you should return undefined.
+- If there are duplicates, just return one of them.
 
 ###### Examples:
 #
