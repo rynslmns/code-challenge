@@ -25,14 +25,14 @@ You are going to be given an array of integers. Your job is to take that array a
 ```javascript
 equalArray([1,2,3,4,3,2,1]) // returns 3
 equalArray([1,100,50,-51,1,1]) // returns 1
-equalArray([15,2,-1]) // returns -1 
+equalArray([15,2,-1]) // returns -1
 ```
 
 ### Word Break
 In some languages, (i.e. Chinese and Japanese) there are no word breaks between words. This makes building search engines for these languages more complex, as it's difficult to break search terms into individual words.
 
 Your task is:
-- given a list of known words and a sentence with no spaces, break it into a list of known words. 
+- given a list of known words and a sentence with no spaces, break it into a list of known words.
 - When you can't find a word list to make the sentence, you should return undefined.
 - If there are duplicates, just return one of them.
 
@@ -73,7 +73,30 @@ const dictWords = [
     "with","within","without","word","work","would","year","yet","you","young",
     "your"
   ];
-  
+
 wordBreak(dictWords, "steelhouse") // returns ["steel", "house"]
 wordBreak(dictWords, "tobeornottobethatisthequestion") // returns ["to", "be", "or", "not", "that", "is", "the" "question"]
+```
+
+### Search Input With Suggestion Box
+Create a search input meant to find cities with the following functionality:
+- When typing, a suggestion box should appear under the input
+- The suggestion box should be filled with results similar to what the user has entered
+- When there is no match found, the suggestion box should show 'No Cities Found'
+- When the search input is empty, the suggestion box should not be visible
+
+```javascript
+// List of Cities
+const cities = [
+  'Chicago',
+  'Los Angeles',
+  'Santa Cruz',
+  'Santa Ana',
+  'Los Gatos'
+];
+
+// Examples
+User types 'santa' -> The suggestion box shows 'Santa Cruz' and 'Santa Ana'
+User types 'chic'  -> The suggestion box shows 'Chicago'
+User types 'gary'  -> The suggestion box shows 'No Cities Found'
 ```
